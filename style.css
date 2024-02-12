@@ -16,6 +16,7 @@
 
 .nav-logo{
     width: 100px;
+    min-width: 100px;
     height: 50px;
 }
 
@@ -203,6 +204,7 @@ span{
 
 
 .shop-section{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -213,6 +215,7 @@ span{
 .box {
     height: 400px;
     width: 23%;
+    min-width: 220px;
     background-color: #fff;
     padding: 20px 0px 15px;
     margin-top: 10px;
@@ -332,17 +335,17 @@ ul a {
 /* responsive */
 
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 425px) {
   
-    .nav-logo{
+    /* .nav-logo{
         width: 250px;
-    }
+    } */
     
     
     
-    .nav-address{
+    /* .nav-address{
         display: none;
-    }
+    } */
 
 
     /* .nav-search{
@@ -351,15 +354,69 @@ ul a {
         justify-content: flex-start;
     } */
 
+    /* .nav-singin{
+        display: none;
+    } */
+
+
+    /* .shop-section{
+        flex-direction: column;  
+    } */
+    /* .box{
+    width: 100%;
+    } */
+    .foot-panel1{
+        margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .panel-option{
+        display: none;
+    }
+    .nav-address{
+        display: none;
+    }
+    .nav-return{
+        display: none;
+    }
+    .nav-search{
+        width: 220px;
+        
+    /* height: 40px; */
+    }
+    .select-all{
+        display: none;
+    }
     .nav-singin{
         display: none;
     }
+    
+}
 
-
+@media screen and (max-width: 1024px) {
+    .navber{
+        justify-content: space-between;
+    }
+    .box-content{
+        min-width: 21%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .box{
+        width: 35%;
+    }
     .shop-section{
-        flex-direction: column;  
+        justify-content: space-around;
+        /* width: 80%; */
     }
     .box{
-    width: 100%;
+        flex-wrap: wrap;
+    }
+    .nav-cart{
+        display: none;
+    }
+    .nav-return{
+        display: none;
     }
 }
